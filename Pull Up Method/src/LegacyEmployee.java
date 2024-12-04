@@ -6,10 +6,6 @@ public class LegacyEmployee {
         this.name = name;
         this.monthlySalary = monthlySalary;
     }
-    
-    public void salaryBonus(int bonus) {
-        this.setMonthlySalary((this.getMonthlySalary() + bonus) * 1.02);
-    }
 
     public String getName() {
         return name;

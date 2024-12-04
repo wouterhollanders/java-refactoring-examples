@@ -11,13 +11,21 @@ public class OrderCalculator {
 		this.discount = discount;
 	}
 
-	// Method to be refactored (Rename Method)
+	// #1: Can be renamed
 	public double calculateTotal() {
 		double subtotal = itemCount * itemPrice;
 		double total = subtotal - (subtotal * discount);
 
 		return DoTest(total);
 	}
+	
+	// #2: Can be renamed to calculateTotal, but will cause a problem (double definition).
+		public double calculateTotal2() {
+			double subtotal = itemCount * itemPrice;
+			double total = subtotal - (subtotal * discount);
+
+			return DoTest(total);
+		}
 
 	private double DoTest(double total) {
 
