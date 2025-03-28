@@ -9,6 +9,4 @@ public abstract class Site {
         this.units = units;
         this.rate = rate;
     }
-
-    public abstract double getBillableAmount();
 }

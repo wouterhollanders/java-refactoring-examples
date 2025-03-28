@@ -31,4 +31,10 @@ public class Employee extends LegacyEmployee {
 		}
 
 	}
+	
+	// #5
+	@Override
+	public void doSomething() {
+    	System.out.println("Sub Class: Do Something");
+    }
 }

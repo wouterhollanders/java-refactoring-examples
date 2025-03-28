@@ -18,4 +18,8 @@ public class LegacyEmployee {
     public void setMonthlySalary(double monthlySalary) {
         this.monthlySalary = monthlySalary;
     }
+    
+    public void doSomething() {
+    	System.out.println("Super Class: Do Something");
+    }
 }
