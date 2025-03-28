@@ -6,9 +6,9 @@ public class ResidentialSite extends Site {
         super(units, rate);
     }
 
-    @Override
+    
     public double getBillableAmount() {
-        double base = units * rate * 0.5;
+        double base = units * rate;
         double tax = base * TAX_RATE;
         return base + tax;
     }
